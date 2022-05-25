@@ -15,4 +15,6 @@ Here is a repository for bash scripts to understand shell basics
 
 6-firstdirectory creates a directory named my_first_directory in the /tmp/ directory.
 
+7-movethatfile move the file betty from /tmp/ to /tmp/my_first_directory.
+
 
