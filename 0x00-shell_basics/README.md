@@ -19,4 +19,6 @@ Here is a repository for bash scripts to understand shell basics
 
 8-firstdelete delete the file betty in /tmp/my_first_directory/
 
+9-firstdirdeletion the directory my_first_directory that is in the /tmp directory.
+
 
