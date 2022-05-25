@@ -21,4 +21,6 @@ Here is a repository for bash scripts to understand shell basics
 
 9-firstdirdeletion the directory my_first_directory that is in the /tmp directory.
 
+10-back changes the working directory to the previous one.
+
 
