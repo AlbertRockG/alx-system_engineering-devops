@@ -7,3 +7,6 @@ Here is a repository for bash scripts to understand shell basics
 
 2-bring_me_home chages the working directory to the user's home directory.
 
+3-listfiles displays current directory contents in a long format.
+
+
