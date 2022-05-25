@@ -17,4 +17,6 @@ Here is a repository for bash scripts to understand shell basics
 
 7-movethatfile move the file betty from /tmp/ to /tmp/my_first_directory.
 
+8-firstdelete delete the file betty in /tmp/my_first_directory/
+
 
