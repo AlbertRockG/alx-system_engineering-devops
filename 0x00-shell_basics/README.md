@@ -11,4 +11,6 @@ Here is a repository for bash scripts to understand shell basics
 
 4-listmorefiles displays current directory contents, including hidden files (starting with .)
 
+5-listfilesdigitonly displays current directory contents in long format with user and group IDs displayed numerically and hidden files (starting with .)
+
 
