@@ -23,4 +23,6 @@ Here is a repository for bash scripts to understand shell basics
 
 10-back changes the working directory to the previous one.
 
+11-lists lists all files including hidden files in the current directory, its parents and the /boot directory in long format.
+
 
