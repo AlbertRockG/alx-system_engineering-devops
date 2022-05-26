@@ -39,4 +39,4 @@ Here is a repository for bash scripts to understand shell basics
 
 103-commas lists all the files and directories of the current directory, including hidden files with a special formating.
 
-
+school.mgc is a magic file that can be used with the command file to detect School data files.
