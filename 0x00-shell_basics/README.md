@@ -27,4 +27,6 @@ Here is a repository for bash scripts to understand shell basics
 
 12-file_type prints the type of the file named iamafile.
 
+13-symbolic_link creates a symbolic link to /bin/ls, named __ls__ in the current working directory.
+
 
