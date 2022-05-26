@@ -25,4 +25,6 @@ Here is a repository for bash scripts to understand shell basics
 
 11-lists lists all files including hidden files in the current directory, its parents and the /boot directory in long format.
 
+12-file_type prints the type of the file named iamafile.
+
 
