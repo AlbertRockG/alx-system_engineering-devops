@@ -37,4 +37,6 @@ Here is a repository for bash scripts to understand shell basics
 
 102-tree creates the directories welcome/, welcome/to and welcome/to/school in the current directory.
 
+103-commas lists all the files and directories of the current directory, including hidden files with a special formating.
+
 
