@@ -1,0 +1,15 @@
+total 52
+drwxrwxr-x 2 albertg albertg 4096 May 30 19:24 .
+drwxrwxr-x 6 albertg albertg 4096 May 30 17:08 ..
+-rwxrwxr-x 1 albertg albertg   32 May 30 17:08 0-hello_world
+-rwxrwxr-x 1 albertg albertg   28 May 30 17:08 1-confused_smiley
+-rwxrwxr-x 1 albertg albertg   28 May 30 17:08 2-hellofile
+-rwxrwxr-x 1 albertg albertg   39 May 30 17:08 3-twofiles
+-rwxrwxr-x 1 albertg albertg   29 May 30 17:08 4-lastlines
+-rwxrwxr-x 1 albertg albertg   29 May 30 17:08 5-firstlines
+-rwxrwxr-x 1 albertg albertg   36 May 30 17:08 6-third_line
+-rwxr--r-- 1 albertg albertg   90 May 30 19:01 7-file
+-rwxr--r-- 1 albertg albertg   36 May 30 19:24 8-cwd_state
+-rw-rw-r-- 1 albertg albertg  916 May 30 17:08 iacta
+-rw-rw-r-- 1 albertg albertg    0 May 30 19:24 ls_cwd_content
+-rw-rw-r-- 1 albertg albertg  129 May 30 17:23 README.md
