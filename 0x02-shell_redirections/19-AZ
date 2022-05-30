@@ -1,0 +1,2 @@
+#!/bin/bash
+tr Z A | tr e c
