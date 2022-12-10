@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+# Connects to my ALX training server
+ssh -i ~/.ssh/school ubuntu@54.90.63.78
