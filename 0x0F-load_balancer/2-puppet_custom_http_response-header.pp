@@ -13,7 +13,7 @@ exec { 'install Nginx':
   before   => Exec['add_header'],
 }
 
-exec { 'add_header':
+file_line { 'add_header':
   ensure      => present,
   path        => '/etc/nginx/sites-available/default',  
   line        => '\nadd_header X-Served-By $HOSTNAME',
