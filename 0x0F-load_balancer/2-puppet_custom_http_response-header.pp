@@ -1,21 +1,23 @@
 # Installs a Nginx server with custome HTTP header
+include stdlib
 
-exec {'update':
+exec { 'update':
   provider => shell,
   command  => 'sudo apt-get -y update',
   before   => Exec['install Nginx'],
 }
 
-exec {'install Nginx':
+exec { 'install Nginx':
   provider => shell,
   command  => 'sudo apt-get -y install nginx',
   before   => Exec['add_header'],
 }
 
 exec { 'add_header':
-  provider    => shell,
-  environment => ["HOST=${hostname}"],
-  command     => 'sudo sed -i "s/include \/etc\/nginx\/sites-enabled\/\*;/include \/etc\/nginx\/sites-enabled\/\*;\n\tadd_header X-Served-By \"$HOST\";/" /etc/nginx/sites-available/default',
+  ensure      => present,
+  path        => '/etc/nginx/sites-available/default',  
+  line        => '\nadd_header X-Served-By $HOSTNAME',
+  match       => '^listen       [::]:80',
   before      => Exec['restart Nginx'],
 }
 
