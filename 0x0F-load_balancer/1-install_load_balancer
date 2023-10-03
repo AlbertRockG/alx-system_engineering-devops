@@ -33,8 +33,8 @@ listen load_balancer
    balance roundrobin
    option httpclose
    option forwardfor
-   server 65087-web-01 54.210.192.117:80 check
-   server 65087-web-02 100.25.133.99:80 check
+   server 65087-web-01 54.209.135.247:80 check
+   server 65087-web-02 3.90.85.92:80 check
 " >> /etc/haproxy/haproxy.cfg
 
 service haproxy start
