@@ -1,4 +1,4 @@
-i#!/usr/bin/python3
+#!/usr/bin/python3
 """Defines a function to count words in all hot posts of a given Reddit subreddit."""
 import requests
 
