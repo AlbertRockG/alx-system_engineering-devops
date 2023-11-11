@@ -7,12 +7,12 @@ the titles of all hot articles for a given subreddit.
 import requests as rq
 
 
-def recurse(subreddit, hot_list=[], after=None):
+def recurse(subreddit, hot_list=[], after=None, count=0):
     """Returns a list of titles of all hot posts on a given subreddit.
     """
     url = "https://www.reddit.com/r/{}/hot/.json".format(subreddit)
     headers = {"User-Agent": "UserAgentAlberTrockG/2.0"}
-    params = {"after": after}
+    params = {"after": after, "count": count, "limit": 100}
 
     response = rq.get(
         url=url,
@@ -24,8 +24,9 @@ def recurse(subreddit, hot_list=[], after=None):
         results = response.json().get("data")
         for child in results.get("children"):
             hot_list.append(child.get("data").get("title"))
+        count += results["dist"]
         after = results.get("after")
         if after is not None:
-            return recurse(subreddit, hot_list, after)
+            return recurse(subreddit, hot_list, after, count)
         return hot_list
     return None
