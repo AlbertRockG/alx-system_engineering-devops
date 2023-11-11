@@ -42,9 +42,12 @@ def count_words(subreddit, word_list, dict_of_words=None, after="", count=0):
         data = response.json().get("data")
         for child in data["children"]:
             title = child["data"]["title"].lower().split()
-            for word in word_list:
-                if word.lower() in title:
-                    dict_of_words[word.lower()] += title.count(word.lower())
+            for i in range(len(title)):
+                for word in word_list:
+                    if title[i].lower() == word.lower():
+                        dict_of_words[word.lower()] += title.count(
+                            word.lower()
+                            )
 
         count += data["dist"]
         after = data["after"]
